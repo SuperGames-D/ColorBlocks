@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Blocks</title>
+    <link rel="icon" type="image/x-icon" href="colorblocks-icon.png">
+     <style>
+    @font-face { font-family: ProtestStrike; src: url('ProtestStrike-Regular.ttf'); }
+    body {
+        text-align: center;
+        font-family: ProtestStrike;
+        color: white;
+        min-height: 100vh;
+        text-decoration: outline black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        background-image: linear-gradient(#00fc29, #00b21d);
+        height: 100vh;
+	    @include flex-center-hv;
+        background-size: cover;
+        background-position: center;
+	    position: relative;
+	    width: 100%;
+        height: 100%;
+        min-height: 100vh;
+    }
+    button {
+        font-size: 40px;
+        font-family: ProtestStrike; src: url('ProtestStrike-Regular.ttf');
+        color: white;
+        -webkit-text-stroke-width: 2px;
+        background-color: #34a7d2;
+        border: 2px solid #1a6e8c;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    button:hover {
+    background-color: #1a6e8c;
+    }
+
+    .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #34a7d2;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  width: 50%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+<a href="index.html">
+    <img src="colorblocks-logo.png" height="90px"></a>
+<br><br><br><br><br>
+<p>
+<text style="font-size: 30px; text-align: center">Download</text><br>
+    <a href="https://supergames-d.itch.io/colorblocks" target="_self">
+    <img src="itch-io-download.svg"  alt="Download on itch.io" height="70"/> </a>
+</p><br><br><br><br>
+<button onclick="announcements()">Announcements</button>&nbsp&nbsp<button id="credits">Credits</button><br><br>
+
+<p style="font-size: 27px; width: 50%; text-align: center; margin: auto;">In Color Blocks, you must make your way through many levels of increasing difficulty with awesome music!</p>
+
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NqoCgnvS0qA?si=5lIC5rP_FZqfF1QX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<img src="colorblocks-preview1.png" width="400px">
+<img src="colorblocks-preview2.png" width="400px">
+<img src="colorblocks-preview3.png" width="400px">
+<br>
+<img src="colorblocks-preview4.png" width="400px">
+<img src="colorblocks-preview5.png" width="400px">
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close" style="font-size: 100px">&times;</span>
+
+    <h1 style="font-size:50px;">Credits</h1>
+      <p style="font-size: 28px">
+Developed by SuperGames-
+<br><br>
+Font: Protest Strike from Google fonts
+<br><br>
+Songs:
+          <button style="font-size: 20px; -webkit-text-stroke-width: 1px;" onclick="viewSongs()">view songs</button>
+          <br><br>
+</p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
